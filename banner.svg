@@ -1,0 +1,70 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 300" width="900" height="300">
+  <defs>
+    <linearGradient id="boldBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#0F0F1A"/>
+      <stop offset="100%" style="stop-color:#1a1a30"/>
+    </linearGradient>
+    <linearGradient id="blueOrange" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#2196F3"/>
+      <stop offset="100%" style="stop-color:#FF5722"/>
+    </linearGradient>
+    <filter id="neonGlow">
+      <feGaussianBlur stdDeviation="4" result="blur"/>
+      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <filter id="codeGlow">
+      <feGaussianBlur stdDeviation="2" result="blur"/>
+      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+  </defs>
+  <rect width="900" height="300" fill="url(#boldBg)"/>
+  <rect x="0" y="0" width="900" height="3" fill="url(#blueOrange)"/>
+  <rect x="0" y="297" width="900" height="3" fill="url(#blueOrange)"/>
+  <!-- Terminal aesthetic left -->
+  <rect x="60" y="60" width="180" height="170" rx="8" fill="#12121f" stroke="#2196F3" stroke-width="1.5" opacity="0.8"/>
+  <!-- Terminal header dots -->
+  <circle cx="78" cy="75" r="4" fill="#FF5722" opacity="0.8"/>
+  <circle cx="92" cy="75" r="4" fill="#FBBC05" opacity="0.8"/>
+  <circle cx="106" cy="75" r="4" fill="#34A853" opacity="0.8"/>
+  <!-- Code lines -->
+  <text x="72" y="102" font-family="monospace" font-size="10" fill="#2196F3" opacity="0.9" filter="url(#codeGlow)">fn main() {</text>
+  <text x="72" y="118" font-family="monospace" font-size="10" fill="#8e9eab" opacity="0.7">  let ai =</text>
+  <text x="72" y="134" font-family="monospace" font-size="10" fill="#FF5722" opacity="0.8">    BoldX::new();</text>
+  <text x="72" y="150" font-family="monospace" font-size="10" fill="#8e9eab" opacity="0.7">  ai.generate(</text>
+  <text x="72" y="166" font-family="monospace" font-size="10" fill="#34A853" opacity="0.8">    "optimize"</text>
+  <text x="72" y="182" font-family="monospace" font-size="10" fill="#8e9eab" opacity="0.7">  );</text>
+  <text x="72" y="198" font-family="monospace" font-size="10" fill="#2196F3" opacity="0.9" filter="url(#codeGlow)">}</text>
+  <!-- Cursor blink -->
+  <rect x="82" y="205" width="8" height="12" fill="#2196F3" opacity="0.7">
+    <animate attributeName="opacity" values="0.7;0;0.7" dur="1.2s" repeatCount="indefinite"/>
+  </rect>
+  <!-- Code brackets as brand element -->
+  <text x="300" y="80" font-family="monospace" font-size="28" fill="#2196F3" opacity="0.3" filter="url(#codeGlow)">{ }</text>
+  <!-- Brand text -->
+  <text x="300" y="135" font-family="Arial, sans-serif" font-size="60" font-weight="bold" fill="white" filter="url(#neonGlow)">BoldX</text>
+  <text x="300" y="168" font-family="Arial, sans-serif" font-size="18" fill="url(#blueOrange)">AI Programming Assistant</text>
+  <!-- Feature pills -->
+  <rect x="300" y="185" width="90" height="26" rx="13" fill="#2196F3" opacity="0.9"/>
+  <text x="345" y="202" font-family="Arial, sans-serif" font-size="11" fill="white" text-anchor="middle">Generate</text>
+  <rect x="400" y="185" width="90" height="26" rx="13" fill="#FF5722" opacity="0.85"/>
+  <text x="445" y="202" font-family="Arial, sans-serif" font-size="11" fill="white" text-anchor="middle">Refactor</text>
+  <rect x="500" y="185" width="80" height="26" rx="13" fill="#2196F3" opacity="0.75"/>
+  <text x="540" y="202" font-family="Arial, sans-serif" font-size="11" fill="white" text-anchor="middle">Debug</text>
+  <rect x="590" y="185" width="80" height="26" rx="13" fill="#FF5722" opacity="0.7"/>
+  <text x="630" y="202" font-family="Arial, sans-serif" font-size="11" fill="white" text-anchor="middle">Review</text>
+  <rect x="680" y="185" width="70" height="26" rx="13" fill="#2196F3" opacity="0.6"/>
+  <text x="715" y="202" font-family="Arial, sans-serif" font-size="11" fill="white" text-anchor="middle">Docs</text>
+  <!-- Right side - IDE icons -->
+  <rect x="790" y="80" width="50" height="50" rx="6" fill="#12121f" stroke="#2196F3" stroke-width="1.5" opacity="0.6"/>
+  <text x="815" y="112" font-family="Arial" font-size="10" fill="#2196F3" text-anchor="middle">VS</text>
+  <rect x="790" y="140" width="50" height="50" rx="6" fill="#12121f" stroke="#FF5722" stroke-width="1.5" opacity="0.5"/>
+  <text x="815" y="172" font-family="Arial" font-size="10" fill="#FF5722" text-anchor="middle">JB</text>
+  <rect x="790" y="200" width="50" height="50" rx="6" fill="#12121f" stroke="#2196F3" stroke-width="1.5" opacity="0.4"/>
+  <text x="815" y="232" font-family="Arial" font-size="9" fill="#2196F3" text-anchor="middle">Code</text>
+  <!-- Version -->
+  <rect x="300" y="230" width="80" height="24" rx="12" fill="none" stroke="#2196F3" stroke-width="1.5"/>
+  <text x="340" y="246" font-family="Arial, sans-serif" font-size="11" fill="#2196F3" text-anchor="middle">v5.0.2</text>
+  <!-- 40+ languages badge -->
+  <rect x="395" y="230" width="100" height="24" rx="12" fill="none" stroke="#FF5722" stroke-width="1.5"/>
+  <text x="445" y="246" font-family="Arial, sans-serif" font-size="11" fill="#FF5722" text-anchor="middle">40+ langs</text>
+</svg>
